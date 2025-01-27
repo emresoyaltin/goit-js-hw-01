@@ -7,8 +7,8 @@ function getElementWidth(content, padding, border) {
     // Toplam genişliği hesapla (box-sizing: border-box varsayımıyla)
     const totalWidth = contentWidth + 2 * (paddingValue + borderValue);
 
-    // Toplam genişliği 'px' formatında döndür
-    return `${totalWidth}px`;
+    // Toplam genişliği yazdır
+    return totalWidth;
 }
 console.log(getElementWidth("50px", "8px", "4px")); // 74
 console.log(getElementWidth("60px", "12px", "8.5px")); // 101
